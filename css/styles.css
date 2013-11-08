@@ -1700,7 +1700,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1376896851');
+  background-image: url('../images/progress.gif?1383933679');
 }
 
 /* Optionally, add your own components here. */
@@ -1808,19 +1808,17 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  font-size-adjust: none;
-  font-stretch: normal;
   line-height: 1em;
 }
 
-/* line 24, ../sass/_thl.scss */
+/* line 22, ../sass/_thl.scss */
 #page-wrapper {
   background: transparent url(http://thlib.dev/global/images/bg-body-wtrmark.jpg) fixed no-repeat 0px 120px;
   margin: 0;
   padding: 0;
 }
 
-/* line 30, ../sass/_thl.scss */
+/* line 28, ../sass/_thl.scss */
 #page {
   background-color: white;
   position: relative;
@@ -1835,7 +1833,7 @@ body {
   height: 100%;
 }
 
-/* line 44, ../sass/_thl.scss */
+/* line 42, ../sass/_thl.scss */
 #topbar {
   width: 100%;
   min-height: 24px;
@@ -1847,7 +1845,7 @@ body {
   background: #686959 url(http://thlib.dev/global/images/bg-top-redbar.png) repeat-x bottom;
 }
 
-/* line 55, ../sass/_thl.scss */
+/* line 53, ../sass/_thl.scss */
 #header {
   color: green;
   height: 65px;
@@ -1855,24 +1853,24 @@ body {
   min-height: 65px;
   position: relative;
   width: 100%;
-  background: url('../images/thl-masthead-mountains.jpg?1382358060') no-repeat scroll 100% 100% #4d3a1f !important;
+  background: url('../images/thl-masthead-mountains.jpg?1383933679') no-repeat scroll 100% 100% #4d3a1f !important;
   overflow: hidden;
 }
 
-/* line 66, ../sass/_thl.scss */
+/* line 64, ../sass/_thl.scss */
 #logo {
   margin: 4px 0px 0px;
 }
 
-/* line 70, ../sass/_thl.scss */
+/* line 68, ../sass/_thl.scss */
 #site-name {
   margin: -5px 0px 5px;
   padding: 0px 0px 0px 32px;
 }
 
-/* line 75, ../sass/_thl.scss */
+/* line 73, ../sass/_thl.scss */
 #site-name a {
-  font-family: Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+  font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
   color: white;
   font-size: 24px;
   font-weight: normal;
@@ -1881,12 +1879,12 @@ body {
   text-shadow: 2px 2px #222;
 }
 
-/* line 85, ../sass/_thl.scss */
+/* line 83, ../sass/_thl.scss */
 #content {
   background-color: white;
-  width: 100%;
+  width: 98%;
   float: left;
-  margin: 0 0 100px;
+  margin: 10px 10px 100px;
   padding: 0;
   min-height: 850px;
   height: auto !important;
@@ -1894,12 +1892,12 @@ body {
 }
 
 /* Navigation Bar */
-/* line 98, ../sass/_thl.scss */
+/* line 96, ../sass/_thl.scss */
 #navigation {
   background: white url(http://thlib.dev/global/images/button1.jpg) repeat-x top;
 }
 
-/* line 102, ../sass/_thl.scss */
+/* line 100, ../sass/_thl.scss */
 #masthead-navbar {
   float: left;
   width: 100%;
@@ -1912,7 +1910,7 @@ body {
   background: white url(/global/images/button1.jpg) repeat-x top;
 }
 
-/* line 103, ../sass/_thl.scss */
+/* line 101, ../sass/_thl.scss */
 #masthead-navbar li {
   float: left;
   white-space: nowrap;
@@ -1920,7 +1918,7 @@ body {
   padding: 0;
 }
 
-/* line 104, ../sass/_thl.scss */
+/* line 102, ../sass/_thl.scss */
 #masthead-navbar li a {
   float: left;
   display: inline;
@@ -1937,7 +1935,7 @@ body {
   cursor: pointer;
 }
 
-/* line 105, ../sass/_thl.scss */
+/* line 103, ../sass/_thl.scss */
 #masthead-navbar li a b {
   float: left;
   display: block;
@@ -1946,37 +1944,37 @@ body {
   background: transparent url(/global/images/button1-R.jpg) no-repeat right top;
 }
 
-/* line 106, ../sass/_thl.scss */
+/* line 104, ../sass/_thl.scss */
 #masthead-navbar li.alpha a {
   background: transparent url(/global/images/button1-L.jpg) no-repeat left top;
   margin-left: 20px !important;
   margin-left: 10px;
 }
 
-/* line 107, ../sass/_thl.scss */
+/* line 105, ../sass/_thl.scss */
 #masthead-navbar li a:hover {
   color: #efefef;
   background: transparent url(/global/images/button2.jpg) repeat-x top;
 }
 
-/* line 108, ../sass/_thl.scss */
+/* line 106, ../sass/_thl.scss */
 #masthead-navbar li a:hover b {
   color: #efefef;
   background: transparent url(/global/images/button2.jpg) no-repeat right top;
   display: block;
 }
 
-/* line 109, ../sass/_thl.scss */
+/* line 107, ../sass/_thl.scss */
 #masthead-navbar li a em {
   font-style: normal;
 }
 
-/* line 110, ../sass/_thl.scss */
+/* line 108, ../sass/_thl.scss */
 #masthead-navbar li a:active em {
   color: #fff;
 }
 
-/* line 111, ../sass/_thl.scss */
+/* line 109, ../sass/_thl.scss */
 #masthead-navbar li a:active em b {
   color: #fff;
 }
