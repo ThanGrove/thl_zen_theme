@@ -66,16 +66,25 @@ function thl_zen5_preprocess_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function thl_zen5_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  $variables['featured'] = ($variables['view_mode'] == 'featured') ? TRUE : FALSE;
+  $node = $variables['node'];
+  // Add a Read More link to the Featured (teaser-like) Display Mode
+  if($variables['featured']) {
+    $variables['content']['links']['node']['#links']['node-readmore'] = array(
+        'title' => t('Read more<span class="element-invisible"> about @title</span>', array('@title' => $node->title)),
+        'href' => 'node/' . $node->nid,
+        'html' => TRUE,
+        'attributes' => array('rel' => 'tag', 'title' => $node->title)
+    );
+  }
 
   // Optionally, run node-type-specific preprocess functions, like
   // thl_zen5_preprocess_node_page() or thl_zen5_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
+  /*$function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
-  }
+  }*/
 }
 // */
 
