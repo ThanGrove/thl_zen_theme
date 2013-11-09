@@ -1863,12 +1863,17 @@ body {
 }
 
 /* line 68, ../sass/_thl.scss */
+#name-and-slogan {
+  margin-top: 20px;
+}
+
+/* line 72, ../sass/_thl.scss */
 #site-name {
   margin: -5px 0px 5px;
   padding: 0px 0px 0px 32px;
 }
 
-/* line 73, ../sass/_thl.scss */
+/* line 77, ../sass/_thl.scss */
 #site-name a {
   font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
   color: white;
@@ -1879,7 +1884,7 @@ body {
   text-shadow: 2px 2px #222;
 }
 
-/* line 83, ../sass/_thl.scss */
+/* line 87, ../sass/_thl.scss */
 #content {
   background-color: white;
   width: 98%;
@@ -1889,16 +1894,18 @@ body {
   min-height: 850px;
   height: auto !important;
   height: 850px;
+  font-size: 1.32em;
+  line-height: 1.5em;
 }
 
 /* Navigation Bar */
-/* line 96, ../sass/_thl.scss */
+/* line 102, ../sass/_thl.scss */
 #navigation {
-  background: white url(http://thlib.dev/global/images/button1.jpg) repeat-x top;
+  background: white url('../images/button1.jpg?1383333820') repeat-x top;
 }
 
-/* line 100, ../sass/_thl.scss */
-#masthead-navbar {
+/* line 106, ../sass/_thl.scss */
+.sf-main-menu {
   float: left;
   width: 100%;
   overflow: hidden;
@@ -1907,25 +1914,25 @@ body {
   list-style: none;
   height: 30px;
   min-height: 30px;
-  background: white url(/global/images/button1.jpg) repeat-x top;
+  background: white url('../images/button1.jpg?1383333820') repeat-x top;
 }
 
-/* line 101, ../sass/_thl.scss */
-#masthead-navbar li {
+/* line 118, ../sass/_thl.scss */
+.sf-main-menu li {
   float: left;
   white-space: nowrap;
-  margin: 0;
-  padding: 0;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 
-/* line 102, ../sass/_thl.scss */
-#masthead-navbar li a {
+/* line 125, ../sass/_thl.scss */
+.sf-main-menu li a {
   float: left;
   display: inline;
   height: 30px;
   line-height: 26px;
   color: #fff;
-  padding: 0 0 0 17px;
+  padding: 0px;
   text-decoration: none;
   display: block;
   font-size: 120%;
@@ -1935,48 +1942,99 @@ body {
   cursor: pointer;
 }
 
-/* line 103, ../sass/_thl.scss */
-#masthead-navbar li a b {
+/* line 141, ../sass/_thl.scss */
+.sf-main-menu li a b {
   float: left;
   display: block;
-  padding: 0 17px 5px 0;
+  padding: 0px 16px 5px;
   color: #fff;
-  background: transparent url(/global/images/button1-R.jpg) no-repeat right top;
+  background: transparent url('../images/button1-R.jpg?1383331089') no-repeat right top;
 }
 
-/* line 104, ../sass/_thl.scss */
-#masthead-navbar li.alpha a {
-  background: transparent url(/global/images/button1-L.jpg) no-repeat left top;
+/* line 149, ../sass/_thl.scss */
+.sf-main-menu li.first a {
+  background: transparent url('../images/button1-L.jpg?1383331108') no-repeat left top;
   margin-left: 20px !important;
-  margin-left: 10px;
 }
 
-/* line 105, ../sass/_thl.scss */
-#masthead-navbar li a:hover {
+/* line 154, ../sass/_thl.scss */
+.sf-main-menu li a:hover {
   color: #efefef;
-  background: transparent url(/global/images/button2.jpg) repeat-x top;
+  background: transparent url('../images/button2.jpg?1383331123') repeat-x top;
 }
 
-/* line 106, ../sass/_thl.scss */
-#masthead-navbar li a:hover b {
+/* line 159, ../sass/_thl.scss */
+.sf-main-menu li a:hover b {
   color: #efefef;
-  background: transparent url(/global/images/button2.jpg) no-repeat right top;
+  background: transparent url('../images/button2.jpg?1383331123') no-repeat right top;
   display: block;
 }
 
-/* line 107, ../sass/_thl.scss */
-#masthead-navbar li a em {
+/* line 165, ../sass/_thl.scss */
+.sf-main-menu li a em {
   font-style: normal;
 }
 
-/* line 108, ../sass/_thl.scss */
-#masthead-navbar li a:active em {
+/* line 169, ../sass/_thl.scss */
+.sf-main-menu li a:active em {
   color: #fff;
 }
 
-/* line 109, ../sass/_thl.scss */
-#masthead-navbar li a:active em b {
+/* line 173, ../sass/_thl.scss */
+.sf-main-menu li a:active em b {
   color: #fff;
+}
+
+/* line 177, ../sass/_thl.scss */
+.sf-main-menu li a.active {
+  background: url('../images/button3-L.jpg?1383934503') no-repeat scroll left top white;
+  color: #CE570F;
+}
+
+/* line 182, ../sass/_thl.scss */
+.sf-main-menu li a.active b {
+  /*background: image-url('button3-R.jpg') no-repeat scroll right top #FFFFFF;*/
+  color: #CE570F;
+  padding-top: 4px;
+}
+
+/*
+.sf-main-menu li a:hover {
+    background: image-url('button3-L.jpg') no-repeat scroll left top #FFFFFF;
+    text-decoration: none;
+}
+
+.sf-main-menu li a:hover b {
+    background: image-url('button3-R.jpg') no-repeat scroll right top #FFFFFF;
+    color: #0000CC;
+    text-decoration: underline;
+}*/
+/** Image Styles **/
+/* line 201, ../sass/_thl.scss */
+.field-name-field-infopage-image .field-item {
+  float: left;
+  margin: -6px 16px 6px -6px;
+  box-shadow: 5px 5px 3px #888888;
+  padding: 4px;
+}
+
+/* line 208, ../sass/_thl.scss */
+.field-name-field-infopage-image img {
+  background-color: #EEEEEE;
+  border: 1px solid #C0C0C0;
+  display: block;
+  position: relative;
+}
+
+/** Text Styles **/
+/* line 218, ../sass/_thl.scss */
+article {
+  margin: auto 8px;
+}
+
+/* line 222, ../sass/_thl.scss */
+article p {
+  text-align: justify;
 }
 
 /* SMACSS theme rules */
