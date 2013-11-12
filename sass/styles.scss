@@ -19,8 +19,8 @@
 @import "components/misc";
 /* Optionally, add your own components here. */
 @import "print";
-@import "thl";
 
-/* SMACSS theme rules */
-/* @import "theme-A"; */
-/* @import "theme-B"; */
+/* THL Specific Styles */
+@import "thl";
+@import "thl_nav";
+@import "thl_layouts";

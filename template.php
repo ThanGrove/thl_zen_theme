@@ -71,12 +71,27 @@ function thl_zen5_preprocess_node(&$variables, $hook) {
   $node = $variables['node'];
   // Add a Read More link to the Featured (teaser-like) Display Mode
   if($variables['featured']) {
-    $variables['content']['links']['node']['#links']['node-readmore'] = array(
-        'title' => t('Read more<span class="element-invisible"> about @title</span>', array('@title' => $node->title)),
-        'href' => 'node/' . $node->nid,
-        'html' => TRUE,
-        'attributes' => array('rel' => 'tag', 'title' => $node->title)
-    );
+    // Add read more url variable as node path. !!NEED TO DEAL WITH ALIASES!!
+    $variables['rmurl'] = 'node/' . $node->nid;
+    // Create read more link
+    $rmlink = l(t('Read more') . '...', $variables['rmurl']);
+    // insert read more link at end of the last paragraph of the body
+    $body = $variables['content']['body'][0]['#markup'];
+    $variables['content']['body'][0]['#markup'] = substr_replace($body, ' ' . $rmlink . '</p>',  strrpos($body, '</p>'));
+  }
+  
+  // Add read more link at end of body content so it can be in-line
+  if($variables['teaser'] && isset($variables['field_teaser_node_link'][0])) {
+    // Add readmore url variable which is value of link field
+    $variables['rmurl'] = $variables['field_teaser_node_link'][0]['url'];
+    // Create link without any wrappers
+    $rmlink = l($variables['field_teaser_node_link'][0]['title'], $variables['rmurl']);
+    // Add link around teaser node image
+    $variables['content']['field_teaser_node_image']['#prefix'] = '<a href="' . $variables['rmurl'] . '">';
+    $variables['content']['field_teaser_node_image']['#suffix'] = '</a>';
+    // insert read more link at end of the last paragraph of the body
+    $body = $variables['content']['body'][0]['#markup'];
+    $variables['content']['body'][0]['#markup'] = substr_replace($body, ' ' . $rmlink . '</p>',  strrpos($body, '</p>'));
   }
 
   // Optionally, run node-type-specific preprocess functions, like

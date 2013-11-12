@@ -14,9 +14,8 @@
   
   <?php if($node->type == 'teaser_to_node'): ?>
   
-    <h4><?php print $content['field_teaser_node_header']['#items'][0]['safe_value']; ?> </h4>
+    <h4><a href="<?php print $rmurl; ?>"><?php print $content['field_teaser_node_header']['#items'][0]['safe_value']; ?></a></h4>
     <h5><?php print $node->title; ?></h5>
-    
   <?php elseif ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
     <header>
         <?php print render($title_prefix); ?>

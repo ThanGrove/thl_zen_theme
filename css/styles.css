@@ -1790,6 +1790,7 @@ tr.selected td {
     display: none;
   }
 }
+/* THL Specific Styles */
 /**
  * @file
  * THL specific styles new
@@ -1809,17 +1810,28 @@ body {
   font-variant: normal;
   font-weight: normal;
   line-height: 1em;
+  /** End of Page Wrapper **/
 }
-
-/* line 22, ../sass/_thl.scss */
-#page-wrapper {
+/* line 21, ../sass/_thl.scss */
+body #topbar {
+  width: 100%;
+  min-height: 24px;
+  height: 24px !important;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  border-bottom-width: 0pt;
+  background: #686959 url(http://thlib.dev/global/images/bg-top-redbar.png) repeat-x bottom;
+}
+/* line 32, ../sass/_thl.scss */
+body #page-wrapper {
   background: transparent url(http://thlib.dev/global/images/bg-body-wtrmark.jpg) fixed no-repeat 0px 120px;
   margin: 0;
   padding: 0;
+  /** End of Page **/
 }
-
-/* line 28, ../sass/_thl.scss */
-#page {
+/* line 37, ../sass/_thl.scss */
+body #page-wrapper #page {
   background-color: white;
   position: relative;
   top: 0px;
@@ -1831,22 +1843,11 @@ body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
+  /** End of Header **/
+  /** End of Content */
 }
-
-/* line 42, ../sass/_thl.scss */
-#topbar {
-  width: 100%;
-  min-height: 24px;
-  height: 24px !important;
-  height: 24px;
-  margin: 0;
-  padding: 0;
-  border-bottom-width: 0pt;
-  background: #686959 url(http://thlib.dev/global/images/bg-top-redbar.png) repeat-x bottom;
-}
-
-/* line 53, ../sass/_thl.scss */
-#header {
+/* line 51, ../sass/_thl.scss */
+body #page-wrapper #page #header {
   color: green;
   height: 65px;
   margin-top: -3px;
@@ -1855,56 +1856,172 @@ body {
   width: 100%;
   background: url('../images/thl-masthead-mountains.jpg?1383933679') no-repeat scroll 100% 100% #4d3a1f !important;
   overflow: hidden;
+  /** End of Name and Slogan **/
+  /** nav secondary (logout and profile links) **/
 }
-
-/* line 64, ../sass/_thl.scss */
-#logo {
+/* line 62, ../sass/_thl.scss */
+body #page-wrapper #page #header #logo {
   margin: 4px 0px 0px;
 }
-
-/* line 68, ../sass/_thl.scss */
-#name-and-slogan {
-  margin-top: 20px;
+/* line 66, ../sass/_thl.scss */
+body #page-wrapper #page #header #name-and-slogan {
+  margin-top: 11px;
 }
-
-/* line 72, ../sass/_thl.scss */
-#site-name {
+/* line 69, ../sass/_thl.scss */
+body #page-wrapper #page #header #name-and-slogan #site-name {
   margin: -5px 0px 5px;
   padding: 0px 0px 0px 32px;
 }
-
-/* line 77, ../sass/_thl.scss */
-#site-name a {
+/* line 74, ../sass/_thl.scss */
+body #page-wrapper #page #header #name-and-slogan #site-name a {
   font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
   color: white;
   font-size: 24px;
   font-weight: normal;
   letter-spacing: 3px;
   word-spacing: 20px;
-  text-shadow: 2px 2px #222;
+  text-shadow: 2px 2px #666;
 }
-
-/* line 87, ../sass/_thl.scss */
-#content {
+/* line 85, ../sass/_thl.scss */
+body #page-wrapper #page #header nav#secondary-menu {
+  padding-top: 4px;
+}
+/* line 88, ../sass/_thl.scss */
+body #page-wrapper #page #header nav#secondary-menu li {
+  font-weight: bold;
+}
+/* line 91, ../sass/_thl.scss */
+body #page-wrapper #page #header nav#secondary-menu li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 96, ../sass/_thl.scss */
+body #page-wrapper #page #header nav#secondary-menu li a:hover {
+  color: #C25301;
+  text-decoration: underline;
+}
+/* line 104, ../sass/_thl.scss */
+body #page-wrapper #page #content {
   background-color: white;
-  width: 98%;
+  width: 99%;
   float: left;
-  margin: 10px 10px 100px;
+  margin: 10px 0px 100px 10px;
   padding: 0;
   min-height: 850px;
   height: auto !important;
   height: 850px;
   font-size: 1.32em;
   line-height: 1.5em;
+  /** Image Styles **/
+  /** Text Styles **/
+  /** Teasers **/
+  /** End of Teasers*/
+}
+/* line 119, ../sass/_thl.scss */
+body #page-wrapper #page #content .field-name-field-infopage-image .field-item {
+  float: left;
+  margin: -6px 16px 6px -6px;
+  box-shadow: 5px 5px 3px #888888;
+  padding: 4px;
+}
+/* line 126, ../sass/_thl.scss */
+body #page-wrapper #page #content .field-name-field-infopage-image img {
+  background-color: #EEEEEE;
+  border: 1px solid #C0C0C0;
+  display: block;
+  position: relative;
+}
+/* line 136, ../sass/_thl.scss */
+body #page-wrapper #page #content article {
+  margin: auto 8px;
+}
+/* line 140, ../sass/_thl.scss */
+body #page-wrapper #page #content article p {
+  text-align: justify;
+}
+/* line 146, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser {
+  background: url('../images/bg-thl-sprite.jpg?1368117368') repeat-x scroll center top #eeeeee;
+  border-bottom: 3px solid #C0C0C0;
+  float: left;
+  height: auto !important;
+  margin-bottom: 12px;
+  min-height: 150px;
+  overflow: hidden;
+  padding: 0 0 5px;
+  width: 100%;
+}
+/* line 157, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 {
+  background: url('../images/bg-header-rabsal.png?1368117369') no-repeat scroll 92% center #a17547;
+  color: #EEEFE6;
+  font-size: 110%;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+  text-indent: 25px;
+  white-space: nowrap;
+}
+/* line 167, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a, body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a:visited {
+  background: url('../images/list-diamond-white-off.gif?1368117368') no-repeat scroll 8px center rgba(0, 0, 0, 0);
+  border-bottom: 3px double #FFFFFF;
+  border-top: 3px double #FFFFFF;
+  color: #EEEFE6;
+  display: block;
+  font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 160%;
+  margin: 0;
+  padding: 0 0 1px;
+  text-decoration: none;
+}
+/* line 182, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a:hover {
+  background: url('../images/list-arrow-white-lg.gif?1368117369') no-repeat scroll 8px center rgba(0, 0, 0, 0);
+  border-bottom: 3px double #FFFFFF;
+  border-top: 3px double #FFFFFF;
+  color: #FFFFFF;
+}
+/* line 190, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h5 {
+  color: #333333;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 100%;
+  line-height: 120%;
+  margin: 12px 0 0 15px;
+}
+/* line 198, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser .field-type-image {
+  border: 1px solid #666666;
+  background: none repeat scroll 0 0 #FFFFFF;
+  display: inline;
+  float: right;
+  margin: 12px 12px 2px 5px;
+  padding: 4px;
+}
+/* line 206, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser .field-type-image img {
+  border: 1px solid #CCCCCC;
+}
+/* line 211, ../sass/_thl.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser p {
+  font-size: 90%;
+  line-height: 150%;
+  margin: 8px 10px 12px 15px;
+  text-align: left;
 }
 
+/** End of Body element */
+/* Menus */
 /* Navigation Bar */
-/* line 102, ../sass/_thl.scss */
+/* line 4, ../sass/_thl_nav.scss */
 #navigation {
   background: white url('../images/button1.jpg?1383333820') repeat-x top;
 }
 
-/* line 106, ../sass/_thl.scss */
+/* line 8, ../sass/_thl_nav.scss */
 .sf-main-menu {
   float: left;
   width: 100%;
@@ -1917,7 +2034,7 @@ body {
   background: white url('../images/button1.jpg?1383333820') repeat-x top;
 }
 
-/* line 118, ../sass/_thl.scss */
+/* line 20, ../sass/_thl_nav.scss */
 .sf-main-menu li {
   float: left;
   white-space: nowrap;
@@ -1925,7 +2042,7 @@ body {
   padding: 0px !important;
 }
 
-/* line 125, ../sass/_thl.scss */
+/* line 27, ../sass/_thl_nav.scss */
 .sf-main-menu li a {
   float: left;
   display: inline;
@@ -1942,7 +2059,7 @@ body {
   cursor: pointer;
 }
 
-/* line 141, ../sass/_thl.scss */
+/* line 43, ../sass/_thl_nav.scss */
 .sf-main-menu li a b {
   float: left;
   display: block;
@@ -1951,47 +2068,47 @@ body {
   background: transparent url('../images/button1-R.jpg?1383331089') no-repeat right top;
 }
 
-/* line 149, ../sass/_thl.scss */
+/* line 51, ../sass/_thl_nav.scss */
 .sf-main-menu li.first a {
   background: transparent url('../images/button1-L.jpg?1383331108') no-repeat left top;
   margin-left: 20px !important;
 }
 
-/* line 154, ../sass/_thl.scss */
+/* line 56, ../sass/_thl_nav.scss */
 .sf-main-menu li a:hover {
   color: #efefef;
   background: transparent url('../images/button2.jpg?1383331123') repeat-x top;
 }
 
-/* line 159, ../sass/_thl.scss */
+/* line 61, ../sass/_thl_nav.scss */
 .sf-main-menu li a:hover b {
   color: #efefef;
   background: transparent url('../images/button2.jpg?1383331123') no-repeat right top;
   display: block;
 }
 
-/* line 165, ../sass/_thl.scss */
+/* line 67, ../sass/_thl_nav.scss */
 .sf-main-menu li a em {
   font-style: normal;
 }
 
-/* line 169, ../sass/_thl.scss */
+/* line 71, ../sass/_thl_nav.scss */
 .sf-main-menu li a:active em {
   color: #fff;
 }
 
-/* line 173, ../sass/_thl.scss */
+/* line 75, ../sass/_thl_nav.scss */
 .sf-main-menu li a:active em b {
   color: #fff;
 }
 
-/* line 177, ../sass/_thl.scss */
+/* line 79, ../sass/_thl_nav.scss */
 .sf-main-menu li a.active {
   background: url('../images/button3-L.jpg?1383934503') no-repeat scroll left top white;
   color: #CE570F;
 }
 
-/* line 182, ../sass/_thl.scss */
+/* line 84, ../sass/_thl_nav.scss */
 .sf-main-menu li a.active b {
   /*background: image-url('button3-R.jpg') no-repeat scroll right top #FFFFFF;*/
   color: #CE570F;
@@ -2009,34 +2126,83 @@ body {
     color: #0000CC;
     text-decoration: underline;
 }*/
-/** Image Styles **/
-/* line 201, ../sass/_thl.scss */
-.field-name-field-infopage-image .field-item {
-  float: left;
-  margin: -6px 16px 6px -6px;
-  box-shadow: 5px 5px 3px #888888;
-  padding: 4px;
+/* Accordion Menus (requires accordion menu module) */
+/* line 102, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper {
+  font-family: arial,​helvetica,​sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #F7F8FA;
+  border-color: #99C2E0 #99C2E0 #CCCCCC;
+  border-image: none;
+  border-right: 0 solid #99C2E0;
+  border-style: double solid solid;
+  border-width: 3px 0 3px 1px;
+  margin: 10px 0px 0px;
+  padding: 0;
+  z-index: 900;
+}
+/* line 120, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper .ui-accordion-header {
+  color: #C25301;
+  font-weight: bold;
+  margin: 6px 0px;
+  background-color: #ffffff;
+  border: none !important;
+}
+/* line 128, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper .ui-accordion-content {
+  padding: 0px;
+  line-height: 180%;
+  font-size: 90%;
+}
+/* line 133, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper .ui-accordion-content ul.menu {
+  margin: 0px;
+  padding: 0px 0px 10px 20px;
+  list-style: none outside none;
+}
+/* line 138, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper .ui-accordion-content ul.menu li {
+  list-style: none outside none;
+  background: url('../images/list-arrow-green.gif?1368117369') no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+/* line 142, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper .ui-accordion-content ul.menu li a {
+  margin-left: 14px;
+  color: #333333;
+}
+/* line 147, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper .ui-accordion-content ul.menu li a:hover {
+  color: #000099;
+  text-decoration: underline;
+}
+/* line 157, ../sass/_thl_nav.scss */
+div.accordion-menu-wrapper a {
+  text-decoration: none;
 }
 
-/* line 208, ../sass/_thl.scss */
-.field-name-field-infopage-image img {
-  background-color: #EEEEEE;
-  border: 1px solid #C0C0C0;
-  display: block;
-  position: relative;
+/* End of Accordion Menu wrapper*/
+/* Adjustments to panopoly layouts */
+/* line 4, ../sass/_thl_layouts.scss */
+body #content {
+  /** Mccoppin Layout */
 }
-
-/** Text Styles **/
-/* line 218, ../sass/_thl.scss */
-article {
-  margin: auto 8px;
+/* line 6, ../sass/_thl_layouts.scss */
+body #content .mccoppin-column2 {
+  width: 26.5% !important;
+  padding-top: 10px;
 }
-
-/* line 222, ../sass/_thl.scss */
-article p {
-  text-align: justify;
+/* line 11, ../sass/_thl_layouts.scss */
+body #content .mccoppin-column3 {
+  width: 21.5% !important;
+  margin-left: 20px;
 }
-
-/* SMACSS theme rules */
-/* @import "theme-A"; */
-/* @import "theme-B"; */
+/* line 16, ../sass/_thl_layouts.scss */
+body #content .mccoppin-column-content-region-inner {
+  margin-right: 0px !important;
+}
