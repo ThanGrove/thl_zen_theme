@@ -2230,20 +2230,28 @@ body.page-admin #page {
 body.page-admin #page #content {
   /** End of tables in #content in body.page-admin **/
 }
-/* line 7, ../sass/_thl_admin.scss */
+/* line 6, ../sass/_thl_admin.scss */
+body.page-admin #page #content table {
+  width: 100%;
+}
+/* line 8, ../sass/_thl_admin.scss */
 body.page-admin #page #content table th {
   background-color: lightblue;
 }
-/* line 10, ../sass/_thl_admin.scss */
+/* line 11, ../sass/_thl_admin.scss */
 body.page-admin #page #content table th, body.page-admin #page #content table td {
   padding: 4px;
 }
-/* line 15, ../sass/_thl_admin.scss */
+/* line 16, ../sass/_thl_admin.scss */
+body.page-admin #page #content table.image-anchor {
+  width: auto;
+}
+/* line 20, ../sass/_thl_admin.scss */
 body.page-admin #page #content a {
   color: #0074BD;
   text-decoration: none;
 }
-/* line 20, ../sass/_thl_admin.scss */
+/* line 25, ../sass/_thl_admin.scss */
 body.page-admin #page #content a:hover {
   text-decoration: underline;
 }

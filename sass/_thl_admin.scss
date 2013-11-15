@@ -4,6 +4,7 @@ body.page-admin {
   #page {
     #content {
       table {
+        width: 100%;
         th {
           background-color: lightblue;
         }
@@ -12,6 +13,10 @@ body.page-admin {
         }
       } /** End of tables in #content in body.page-admin **/
        
+      table.image-anchor {
+        width: auto;
+      }
+      
       a {
         color: #0074BD;
         text-decoration: none;
