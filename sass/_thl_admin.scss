@@ -1,0 +1,27 @@
+/** _thl_admin.scss: An SCSS stylesheet for administration pages in the new THL Drupal site **/
+  
+body.page-admin {
+  #page {
+    #content {
+      table {
+        width: 100%;
+        th {
+          background-color: lightblue;
+        }
+        th, td {
+          padding: 4px;
+        }
+      } /** End of tables in #content in body.page-admin **/
+       
+      a {
+        color: #0074BD;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      
+    } /** End of #content in body.page-admin **/
+  } /** End of #page in body.page-admin **/
+} /** End of body.page-admin **/
