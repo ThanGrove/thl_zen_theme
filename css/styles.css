@@ -1807,7 +1807,7 @@ tr.selected td {
 }
 
 /* line 17, ../sass/_thl.scss */
-.view-mode-featured .field-item {
+.view-mode-featured .field-type-image .field-item {
   margin: -6px 16px 6px -6px;
   box-shadow: 5px 5px 3px #888888;
   padding: 4px;
