@@ -128,6 +128,11 @@ body {
 /* Adjustments to Panopoly layouts */
 
 /** Mccoppin Layout */
+.mccoppin-column1 {
+  width: 50% !important;
+  padding-top: 10px;
+}
+
 .mccoppin-column2 {
   width: 26.5% !important;
   padding-top: 10px;

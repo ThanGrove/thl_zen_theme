@@ -2068,18 +2068,24 @@ body #page-wrapper #page #content article p {
 /* Adjustments to Panopoly layouts */
 /** Mccoppin Layout */
 /* line 131, ../sass/_thl_layout.scss */
+.mccoppin-column1 {
+  width: 50% !important;
+  padding-top: 10px;
+}
+
+/* line 136, ../sass/_thl_layout.scss */
 .mccoppin-column2 {
   width: 26.5% !important;
   padding-top: 10px;
 }
 
-/* line 136, ../sass/_thl_layout.scss */
+/* line 141, ../sass/_thl_layout.scss */
 .mccoppin-column3 {
   width: 21.5% !important;
   margin-left: 20px;
 }
 
-/* line 141, ../sass/_thl_layout.scss */
+/* line 146, ../sass/_thl_layout.scss */
 .mccoppin-column-content-region-inner {
   margin-right: 0px !important;
 }
