@@ -231,7 +231,17 @@ body.page-admin {
         th, td {
           padding: 4px;
         }
+      } /** End of tables in #content in body.page-admin **/
+       
+      a {
+        color: #0074BD;
+        text-decoration: none;
       }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+      
     } /** End of #content in body.page-admin **/
   } /** End of #page in body.page-admin **/
 } /** End of body.page-admin **/

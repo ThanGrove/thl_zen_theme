@@ -2022,6 +2022,10 @@ body.page-admin {
 body.page-admin #page {
   /** End of #content in body.page-admin **/
 }
+/* line 225, ../sass/_thl.scss */
+body.page-admin #page #content {
+  /** End of tables in #content in body.page-admin **/
+}
 /* line 226, ../sass/_thl.scss */
 body.page-admin #page #content table {
   width: 100%;
@@ -2033,6 +2037,15 @@ body.page-admin #page #content table th {
 /* line 231, ../sass/_thl.scss */
 body.page-admin #page #content table th, body.page-admin #page #content table td {
   padding: 4px;
+}
+/* line 236, ../sass/_thl.scss */
+body.page-admin #page #content a {
+  color: #0074BD;
+  text-decoration: none;
+}
+/* line 241, ../sass/_thl.scss */
+body.page-admin #page #content a:hover {
+  text-decoration: underline;
 }
 
 /** End of body.page-admin **/
