@@ -1894,7 +1894,23 @@ tr.selected td {
 
 /** End of Teasers*/
 /** Form Styles **/
-/* line 107, ../sass/_thl.scss */
+/* line 106, ../sass/_thl.scss */
+input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-color: #999999 #CCCCCC #CCCCCC;
+  border-image: none;
+  border-right: 1px solid #CCCCCC;
+  border-style: solid;
+  border-width: 1px;
+  color: #333333;
+  padding: 2px;
+}
+
+/* line 121, ../sass/_thl.scss */
 input.form-submit, a.button {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
