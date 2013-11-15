@@ -1933,6 +1933,11 @@ input.form-submit, a.button {
   text-align: center;
 }
 
+/* line 143, ../sass/_thl.scss */
+li.is-active a {
+  color: white;
+}
+
 /** THL Layout SCSS: Describes Layout of THL Pages and include Panopoly layout overrides **/
 /* line 3, ../sass/_thl_layout.scss */
 body {
