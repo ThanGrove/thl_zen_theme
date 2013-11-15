@@ -8,240 +8,96 @@
  * NOTE: ALL image-url() values ARE GOING TO MY LOCALHOST VERSION OF THL. MUST BRING IMAGES INTO THEME
  */
 
-body {
-	 color:#404040; 
-	 font-size:63%; 
-	 font-family: arial, sans-serif; 
-	 background: #96967B image-url('http://thlib.dev/global/images/bg-body-repeat.jpg') fixed repeat-x top; 
-	 font-style:normal; 
-	 font-variant:normal; 
-	 font-weight:normal; 
-	 line-height:1em;  
+/** Image Styles **/
+	
+.field-name-field-infopage-image .field-item {
+	float: left;
+	margin: -6px 16px 6px -6px;
+	box-shadow: 5px 5px 3px #888888;
+  padding: 4px;
+}
 
-	#topbar {
-		width:100%; 
-		min-height:24px; 
-		height:24px !important; 
-		height:24px; 
-		margin:0; 
-		padding:0; 
-		border-bottom-width:0pt;
-		background:#686959 image-url('http://thlib.dev/global/images/bg-top-redbar.png') repeat-x bottom; 
+.field-name-field-infopage-image img {
+	 background-color: #EEEEEE;
+    border: 1px solid #C0C0C0;
+    display: block;
+    position: relative;
+    
+}
+
+
+/** Teasers **/
+	
+.node-teaser-to-node.node-teaser {
+	background: image-url("bg-thl-sprite.jpg") repeat-x scroll center top #EEEEEE;
+  border-bottom: 3px solid #C0C0C0;
+	float: left;
+	height: auto !important;
+	margin-bottom: 12px;
+	min-height: 150px;
+	overflow: hidden;
+	padding: 0 0 5px;
+	width: 100%;
+
+	h4 {
+		background: image-url("bg-header-rabsal.png") no-repeat scroll 92% center #A17547;
+		color: #EEEFE6;
+		font-size: 110%;
+		line-height: 160%;
+		margin: 0;
+		padding: 0;
+		text-indent: 25px;
+		white-space: nowrap;
+		
+		a, a:visited {
+			background: image-url("list-diamond-white-off.gif") no-repeat scroll 8px center rgba(0, 0, 0, 0);
+	    border-bottom: 3px double #FFFFFF;
+	    border-top: 3px double #FFFFFF;
+	    color: #EEEFE6;
+	    display: block;
+	    font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
+	    font-size: 100%;
+	    font-weight: bold;
+	    line-height: 160%;
+	    margin: 0;
+	    padding: 0 0 1px;
+	    text-decoration: none;
+		}
+		
+		a:hover {
+			background: image-url("list-arrow-white-lg.gif") no-repeat scroll 8px center rgba(0, 0, 0, 0);
+	    border-bottom: 3px double #FFFFFF;
+	    border-top: 3px double #FFFFFF;
+	    color: #FFFFFF;
+		}
 	}
 	
-	#page-wrapper {
-		background: transparent image-url('http://thlib.dev/global/images/bg-body-wtrmark.jpg') fixed no-repeat 0px 120px; 
-		margin:0; 
-		padding:0;
-		
-		#page {
-			background-color:white; 
-			position:relative; 
-			top:0px; 
-			margin:0 auto; 
-			width:85%; 
-			min-width:980px; 
-			max-width:1050px; 
-			text-align:left; 
-			min-height:100%; 
-			height:auto !important; 
-			height:100%;  
-			
-			
-			#header {
-				color: green;
-				height: 65px;
-				margin-top: -3px;
-				min-height: 65px;
-			  position: relative;
-			  width: 100%;
-				background: image-url('thl-masthead-mountains.jpg')  no-repeat scroll 100% 100% #4D3A1F !important;
-				overflow: hidden;
-				
-				
-				#logo {
-					margin: 4px 0px 0px;
-				}
-				
-				#name-and-slogan {
-					margin-top: 11px;
-					
-					#site-name {
-						margin: -5px 0px 5px;
-						padding: 0px 0px 0px 32px;
-					}
-					
-					#site-name a {
-						font-family: $timesnewroman;
-						color: white;
-						font-size: 24px;
-						font-weight: normal;
-						letter-spacing: 3px;
-						word-spacing: 20px;
-						text-shadow: 2px 2px #666;
-					} 
-				} /** End of Name and Slogan **/
-					
-			 nav#secondary-menu {
-		 			padding-top: 4px;
-		 			
-			 		li {
-			 			font-weight: bold;
-			 			
-			 			a {
-			 				color: white;
-			 				text-decoration: none;
-			 			}
-			 			
-			 			a:hover {
-			 				color: #C25301;
-			 				text-decoration: underline;
-			 			}
-			 		}
- 			  } /** nav secondary (logout and profile links) **/
-			} /** End of Header **/
+	h5 {
+		color: #333333;
+		font-family: helvetica,arial,sans-serif;
+		font-size: 100%;
+		line-height: 120%;
+		margin: 12px 0 0 15px;
+	}
 	
-			#content {
-				 background-color:white; 
-				 width: 99%; 
-				 float:left; 
-				 margin: 10px 0px 100px 10px; 
-				 padding:0; 
-				 min-height:850px; 
-				 height:auto !important; 
-				 height:850px;
-				 font-size: 1.32em;
-				 line-height: 1.5em;
-				 
+	.field-type-image {
+    border: 1px solid #666666;
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: inline;
+    float: right;
+    margin: 12px 12px 2px 5px;
+    padding: 4px;			
+    
+    img {
+	    border: 1px solid #CCCCCC;
+    }
+	}
 	
-				/** Image Styles **/
-					
-				.field-name-field-infopage-image .field-item {
-					float: left;
-					margin: -6px 16px 6px -6px;
-					box-shadow: 5px 5px 3px #888888;
-				  padding: 4px;
-				}
-				
-				.field-name-field-infopage-image img {
-					 background-color: #EEEEEE;
-				    border: 1px solid #C0C0C0;
-				    display: block;
-				    position: relative;
-				    
-				}
-				
-				/** Text Styles **/
-					
-				article {
-					margin: auto 8px;
-				}
-				
-				article p {
-					text-align: justify;
-				}
-				
-				/** Teasers **/
-					
-				.node-teaser-to-node.node-teaser {
-					background: image-url("bg-thl-sprite.jpg") repeat-x scroll center top #EEEEEE;
-				  border-bottom: 3px solid #C0C0C0;
-					float: left;
-					height: auto !important;
-					margin-bottom: 12px;
-					min-height: 150px;
-					overflow: hidden;
-					padding: 0 0 5px;
-					width: 100%;
-				
-					h4 {
-						background: image-url("bg-header-rabsal.png") no-repeat scroll 92% center #A17547;
-						color: #EEEFE6;
-						font-size: 110%;
-						line-height: 160%;
-						margin: 0;
-						padding: 0;
-						text-indent: 25px;
-						white-space: nowrap;
-						
-						a, a:visited {
-							background: image-url("list-diamond-white-off.gif") no-repeat scroll 8px center rgba(0, 0, 0, 0);
-					    border-bottom: 3px double #FFFFFF;
-					    border-top: 3px double #FFFFFF;
-					    color: #EEEFE6;
-					    display: block;
-					    font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
-					    font-size: 100%;
-					    font-weight: bold;
-					    line-height: 160%;
-					    margin: 0;
-					    padding: 0 0 1px;
-					    text-decoration: none;
-						}
-						
-						a:hover {
-							background: image-url("list-arrow-white-lg.gif") no-repeat scroll 8px center rgba(0, 0, 0, 0);
-					    border-bottom: 3px double #FFFFFF;
-					    border-top: 3px double #FFFFFF;
-					    color: #FFFFFF;
-						}
-					}
-					
-					h5 {
-						color: #333333;
-						font-family: helvetica,arial,sans-serif;
-						font-size: 100%;
-						line-height: 120%;
-						margin: 12px 0 0 15px;
-					}
-					
-					.field-type-image {
-				    border: 1px solid #666666;
-				    background: none repeat scroll 0 0 #FFFFFF;
-				    display: inline;
-				    float: right;
-				    margin: 12px 12px 2px 5px;
-				    padding: 4px;			
-				    
-				    img {
-					    border: 1px solid #CCCCCC;
-				    }
-					}
-					
-					p {
-						font-size: 90%;
-						line-height: 150%;
-						margin: 8px 10px 12px 15px;
-						text-align: left;
-					}
-				} /** End of Teasers*/
-			} /** End of Content */
-		} /** End of Page **/
-	} /** End of Page Wrapper **/
-}  /** End of Body element */
+	p {
+		font-size: 90%;
+		line-height: 150%;
+		margin: 8px 10px 12px 15px;
+		text-align: left;
+	}
+} /** End of Teasers*/
   
-body.page-admin {
-  #page {
-    #content {
-      table {
-        width: 100%;
-        th {
-          background-color: lightblue;
-        }
-        th, td {
-          padding: 4px;
-        }
-      } /** End of tables in #content in body.page-admin **/
-       
-      a {
-        color: #0074BD;
-        text-decoration: none;
-      }
-      
-      a:hover {
-        text-decoration: underline;
-      }
-      
-    } /** End of #content in body.page-admin **/
-  } /** End of #page in body.page-admin **/
-} /** End of body.page-admin **/

@@ -21,6 +21,7 @@
 @import "print";
 
 /* THL Specific Styles */
-@import "thl";
-@import "thl_nav";
-@import "thl_layouts";
+@import "thl"; // General Styles
+@import "thl_layout"; // Page Layout Styles
+@import "thl_nav"; // Navigation Styles
+@import "thl_admin"; // Admin page Styles

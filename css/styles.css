@@ -1800,7 +1800,101 @@ tr.selected td {
  * 
  * NOTE: ALL image-url() values ARE GOING TO MY LOCALHOST VERSION OF THL. MUST BRING IMAGES INTO THEME
  */
-/* line 11, ../sass/_thl.scss */
+/** Image Styles **/
+/* line 13, ../sass/_thl.scss */
+.field-name-field-infopage-image .field-item {
+  float: left;
+  margin: -6px 16px 6px -6px;
+  box-shadow: 5px 5px 3px #888888;
+  padding: 4px;
+}
+
+/* line 20, ../sass/_thl.scss */
+.field-name-field-infopage-image img {
+  background-color: #EEEEEE;
+  border: 1px solid #C0C0C0;
+  display: block;
+  position: relative;
+}
+
+/** Teasers **/
+/* line 31, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser {
+  background: url('../images/bg-thl-sprite.jpg?1368117368') repeat-x scroll center top #eeeeee;
+  border-bottom: 3px solid #C0C0C0;
+  float: left;
+  height: auto !important;
+  margin-bottom: 12px;
+  min-height: 150px;
+  overflow: hidden;
+  padding: 0 0 5px;
+  width: 100%;
+}
+/* line 42, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser h4 {
+  background: url('../images/bg-header-rabsal.png?1368117369') no-repeat scroll 92% center #a17547;
+  color: #EEEFE6;
+  font-size: 110%;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+  text-indent: 25px;
+  white-space: nowrap;
+}
+/* line 52, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser h4 a, .node-teaser-to-node.node-teaser h4 a:visited {
+  background: url('../images/list-diamond-white-off.gif?1368117368') no-repeat scroll 8px center rgba(0, 0, 0, 0);
+  border-bottom: 3px double #FFFFFF;
+  border-top: 3px double #FFFFFF;
+  color: #EEEFE6;
+  display: block;
+  font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 160%;
+  margin: 0;
+  padding: 0 0 1px;
+  text-decoration: none;
+}
+/* line 67, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser h4 a:hover {
+  background: url('../images/list-arrow-white-lg.gif?1368117369') no-repeat scroll 8px center rgba(0, 0, 0, 0);
+  border-bottom: 3px double #FFFFFF;
+  border-top: 3px double #FFFFFF;
+  color: #FFFFFF;
+}
+/* line 75, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser h5 {
+  color: #333333;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 100%;
+  line-height: 120%;
+  margin: 12px 0 0 15px;
+}
+/* line 83, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser .field-type-image {
+  border: 1px solid #666666;
+  background: none repeat scroll 0 0 #FFFFFF;
+  display: inline;
+  float: right;
+  margin: 12px 12px 2px 5px;
+  padding: 4px;
+}
+/* line 91, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser .field-type-image img {
+  border: 1px solid #CCCCCC;
+}
+/* line 96, ../sass/_thl.scss */
+.node-teaser-to-node.node-teaser p {
+  font-size: 90%;
+  line-height: 150%;
+  margin: 8px 10px 12px 15px;
+  text-align: left;
+}
+
+/** End of Teasers*/
+/** THL Layout SCSS: Describes Layout of THL Pages and include Panopoly layout overrides **/
+/* line 3, ../sass/_thl_layout.scss */
 body {
   color: #404040;
   font-size: 63%;
@@ -1812,7 +1906,7 @@ body {
   line-height: 1em;
   /** End of Page Wrapper **/
 }
-/* line 21, ../sass/_thl.scss */
+/* line 13, ../sass/_thl_layout.scss */
 body #topbar {
   width: 100%;
   min-height: 24px;
@@ -1823,14 +1917,14 @@ body #topbar {
   border-bottom-width: 0pt;
   background: #686959 url(http://thlib.dev/global/images/bg-top-redbar.png) repeat-x bottom;
 }
-/* line 32, ../sass/_thl.scss */
+/* line 24, ../sass/_thl_layout.scss */
 body #page-wrapper {
   background: transparent url(http://thlib.dev/global/images/bg-body-wtrmark.jpg) fixed no-repeat 0px 120px;
   margin: 0;
   padding: 0;
   /** End of Page **/
 }
-/* line 37, ../sass/_thl.scss */
+/* line 29, ../sass/_thl_layout.scss */
 body #page-wrapper #page {
   background-color: white;
   position: relative;
@@ -1846,7 +1940,7 @@ body #page-wrapper #page {
   /** End of Header **/
   /** End of Content */
 }
-/* line 51, ../sass/_thl.scss */
+/* line 43, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header {
   color: green;
   height: 65px;
@@ -1859,20 +1953,20 @@ body #page-wrapper #page #header {
   /** End of Name and Slogan **/
   /** nav secondary (logout and profile links) **/
 }
-/* line 62, ../sass/_thl.scss */
+/* line 54, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header #logo {
   margin: 4px 0px 0px;
 }
-/* line 66, ../sass/_thl.scss */
+/* line 58, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header #name-and-slogan {
   margin-top: 11px;
 }
-/* line 69, ../sass/_thl.scss */
+/* line 61, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header #name-and-slogan #site-name {
   margin: -5px 0px 5px;
   padding: 0px 0px 0px 32px;
 }
-/* line 74, ../sass/_thl.scss */
+/* line 66, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header #name-and-slogan #site-name a {
   font-family: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
   color: white;
@@ -1882,25 +1976,32 @@ body #page-wrapper #page #header #name-and-slogan #site-name a {
   word-spacing: 20px;
   text-shadow: 2px 2px #666;
 }
-/* line 85, ../sass/_thl.scss */
+/* line 76, ../sass/_thl_layout.scss */
+body #page-wrapper #page #header #name-and-slogan #site-slogan {
+  color: #FFFFFF;
+  font-size: 130%;
+  font-style: italic;
+  margin: 0 0 0 35px;
+}
+/* line 84, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header nav#secondary-menu {
   padding-top: 4px;
 }
-/* line 88, ../sass/_thl.scss */
+/* line 87, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header nav#secondary-menu li {
   font-weight: bold;
 }
-/* line 91, ../sass/_thl.scss */
+/* line 90, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header nav#secondary-menu li a {
   color: white;
   text-decoration: none;
 }
-/* line 96, ../sass/_thl.scss */
+/* line 95, ../sass/_thl_layout.scss */
 body #page-wrapper #page #header nav#secondary-menu li a:hover {
   color: #C25301;
   text-decoration: underline;
 }
-/* line 104, ../sass/_thl.scss */
+/* line 103, ../sass/_thl_layout.scss */
 body #page-wrapper #page #content {
   background-color: white;
   width: 99%;
@@ -1912,143 +2013,37 @@ body #page-wrapper #page #content {
   height: 850px;
   font-size: 1.32em;
   line-height: 1.5em;
-  /** Image Styles **/
-  /** Text Styles **/
-  /** Teasers **/
-  /** End of Teasers*/
+  /** End of Article */
 }
-/* line 119, ../sass/_thl.scss */
-body #page-wrapper #page #content .field-name-field-infopage-image .field-item {
-  float: left;
-  margin: -6px 16px 6px -6px;
-  box-shadow: 5px 5px 3px #888888;
-  padding: 4px;
-}
-/* line 126, ../sass/_thl.scss */
-body #page-wrapper #page #content .field-name-field-infopage-image img {
-  background-color: #EEEEEE;
-  border: 1px solid #C0C0C0;
-  display: block;
-  position: relative;
-}
-/* line 136, ../sass/_thl.scss */
+/* line 115, ../sass/_thl_layout.scss */
 body #page-wrapper #page #content article {
   margin: auto 8px;
 }
-/* line 140, ../sass/_thl.scss */
+/* line 118, ../sass/_thl_layout.scss */
 body #page-wrapper #page #content article p {
   text-align: justify;
 }
-/* line 146, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser {
-  background: url('../images/bg-thl-sprite.jpg?1368117368') repeat-x scroll center top #eeeeee;
-  border-bottom: 3px solid #C0C0C0;
-  float: left;
-  height: auto !important;
-  margin-bottom: 12px;
-  min-height: 150px;
-  overflow: hidden;
-  padding: 0 0 5px;
-  width: 100%;
-}
-/* line 157, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 {
-  background: url('../images/bg-header-rabsal.png?1368117369') no-repeat scroll 92% center #a17547;
-  color: #EEEFE6;
-  font-size: 110%;
-  line-height: 160%;
-  margin: 0;
-  padding: 0;
-  text-indent: 25px;
-  white-space: nowrap;
-}
-/* line 167, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a, body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a:visited {
-  background: url('../images/list-diamond-white-off.gif?1368117368') no-repeat scroll 8px center rgba(0, 0, 0, 0);
-  border-bottom: 3px double #FFFFFF;
-  border-top: 3px double #FFFFFF;
-  color: #EEEFE6;
-  display: block;
-  font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
-  font-size: 100%;
-  font-weight: bold;
-  line-height: 160%;
-  margin: 0;
-  padding: 0 0 1px;
-  text-decoration: none;
-}
-/* line 182, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a:hover {
-  background: url('../images/list-arrow-white-lg.gif?1368117369') no-repeat scroll 8px center rgba(0, 0, 0, 0);
-  border-bottom: 3px double #FFFFFF;
-  border-top: 3px double #FFFFFF;
-  color: #FFFFFF;
-}
-/* line 190, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser h5 {
-  color: #333333;
-  font-family: helvetica,arial,sans-serif;
-  font-size: 100%;
-  line-height: 120%;
-  margin: 12px 0 0 15px;
-}
-/* line 198, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser .field-type-image {
-  border: 1px solid #666666;
-  background: none repeat scroll 0 0 #FFFFFF;
-  display: inline;
-  float: right;
-  margin: 12px 12px 2px 5px;
-  padding: 4px;
-}
-/* line 206, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser .field-type-image img {
-  border: 1px solid #CCCCCC;
-}
-/* line 211, ../sass/_thl.scss */
-body #page-wrapper #page #content .node-teaser-to-node.node-teaser p {
-  font-size: 90%;
-  line-height: 150%;
-  margin: 8px 10px 12px 15px;
-  text-align: left;
-}
 
 /** End of Body element */
-/* line 223, ../sass/_thl.scss */
-body.page-admin {
-  /** End of #page in body.page-admin **/
-}
-/* line 224, ../sass/_thl.scss */
-body.page-admin #page {
-  /** End of #content in body.page-admin **/
-}
-/* line 225, ../sass/_thl.scss */
-body.page-admin #page #content {
-  /** End of tables in #content in body.page-admin **/
-}
-/* line 226, ../sass/_thl.scss */
-body.page-admin #page #content table {
-  width: 100%;
-}
-/* line 228, ../sass/_thl.scss */
-body.page-admin #page #content table th {
-  background-color: lightblue;
-}
-/* line 231, ../sass/_thl.scss */
-body.page-admin #page #content table th, body.page-admin #page #content table td {
-  padding: 4px;
-}
-/* line 236, ../sass/_thl.scss */
-body.page-admin #page #content a {
-  color: #0074BD;
-  text-decoration: none;
-}
-/* line 241, ../sass/_thl.scss */
-body.page-admin #page #content a:hover {
-  text-decoration: underline;
+/* Adjustments to Panopoly layouts */
+/** Mccoppin Layout */
+/* line 131, ../sass/_thl_layout.scss */
+.mccoppin-column2 {
+  width: 26.5% !important;
+  padding-top: 10px;
 }
 
-/** End of body.page-admin **/
+/* line 136, ../sass/_thl_layout.scss */
+.mccoppin-column3 {
+  width: 21.5% !important;
+  margin-left: 20px;
+}
+
+/* line 141, ../sass/_thl_layout.scss */
+.mccoppin-column-content-region-inner {
+  margin-right: 0px !important;
+}
+
 /* Menus */
 /* Navigation Bar */
 /* line 4, ../sass/_thl_nav.scss */
@@ -2222,22 +2217,39 @@ div.accordion-menu-wrapper a {
 }
 
 /* End of Accordion Menu wrapper*/
-/* Adjustments to panopoly layouts */
-/* line 4, ../sass/_thl_layouts.scss */
-body #content {
-  /** Mccoppin Layout */
+/** _thl_admin.scss: An SCSS stylesheet for administration pages in the new THL Drupal site **/
+/* line 3, ../sass/_thl_admin.scss */
+body.page-admin {
+  /** End of #page in body.page-admin **/
 }
-/* line 6, ../sass/_thl_layouts.scss */
-body #content .mccoppin-column2 {
-  width: 26.5% !important;
-  padding-top: 10px;
+/* line 4, ../sass/_thl_admin.scss */
+body.page-admin #page {
+  /** End of #content in body.page-admin **/
 }
-/* line 11, ../sass/_thl_layouts.scss */
-body #content .mccoppin-column3 {
-  width: 21.5% !important;
-  margin-left: 20px;
+/* line 5, ../sass/_thl_admin.scss */
+body.page-admin #page #content {
+  /** End of tables in #content in body.page-admin **/
 }
-/* line 16, ../sass/_thl_layouts.scss */
-body #content .mccoppin-column-content-region-inner {
-  margin-right: 0px !important;
+/* line 6, ../sass/_thl_admin.scss */
+body.page-admin #page #content table {
+  width: 100%;
 }
+/* line 8, ../sass/_thl_admin.scss */
+body.page-admin #page #content table th {
+  background-color: lightblue;
+}
+/* line 11, ../sass/_thl_admin.scss */
+body.page-admin #page #content table th, body.page-admin #page #content table td {
+  padding: 4px;
+}
+/* line 16, ../sass/_thl_admin.scss */
+body.page-admin #page #content a {
+  color: #0074BD;
+  text-decoration: none;
+}
+/* line 21, ../sass/_thl_admin.scss */
+body.page-admin #page #content a:hover {
+  text-decoration: underline;
+}
+
+/** End of body.page-admin **/
