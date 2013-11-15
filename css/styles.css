@@ -2014,6 +2014,28 @@ body #page-wrapper #page #content .node-teaser-to-node.node-teaser p {
 }
 
 /** End of Body element */
+/* line 223, ../sass/_thl.scss */
+body.page-admin {
+  /** End of #page in body.page-admin **/
+}
+/* line 224, ../sass/_thl.scss */
+body.page-admin #page {
+  /** End of #content in body.page-admin **/
+}
+/* line 226, ../sass/_thl.scss */
+body.page-admin #page #content table {
+  width: 100%;
+}
+/* line 228, ../sass/_thl.scss */
+body.page-admin #page #content table th {
+  background-color: lightblue;
+}
+/* line 231, ../sass/_thl.scss */
+body.page-admin #page #content table th, body.page-admin #page #content table td {
+  padding: 4px;
+}
+
+/** End of body.page-admin **/
 /* Menus */
 /* Navigation Bar */
 /* line 4, ../sass/_thl_nav.scss */
