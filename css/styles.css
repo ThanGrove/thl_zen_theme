@@ -1802,14 +1802,18 @@ tr.selected td {
  */
 /** Image Styles **/
 /* line 13, ../sass/_thl.scss */
-.view-mode-featured .field-item {
+.view-mode-featured .field-type-image {
   float: left;
+}
+
+/* line 17, ../sass/_thl.scss */
+.view-mode-featured .field-item {
   margin: -6px 16px 6px -6px;
   box-shadow: 5px 5px 3px #888888;
   padding: 4px;
 }
 
-/* line 20, ../sass/_thl.scss */
+/* line 23, ../sass/_thl.scss */
 .view-mode-featured img {
   background-color: #EEEEEE;
   border: 1px solid #C0C0C0;
@@ -1818,7 +1822,7 @@ tr.selected td {
 }
 
 /** Teasers **/
-/* line 31, ../sass/_thl.scss */
+/* line 34, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser {
   background: url('../images/bg-thl-sprite.jpg?1368117368') repeat-x scroll center top #eeeeee;
   border-bottom: 3px solid #C0C0C0;
@@ -1830,7 +1834,7 @@ tr.selected td {
   padding: 0 0 5px;
   width: 100%;
 }
-/* line 42, ../sass/_thl.scss */
+/* line 45, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser h4 {
   background: url('../images/bg-header-rabsal.png?1368117369') no-repeat scroll 92% center #a17547;
   color: #EEEFE6;
@@ -1841,7 +1845,7 @@ tr.selected td {
   text-indent: 25px;
   white-space: nowrap;
 }
-/* line 52, ../sass/_thl.scss */
+/* line 55, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser h4 a, .node-teaser-to-node.node-teaser h4 a:visited {
   background: url('../images/list-diamond-white-off.gif?1368117368') no-repeat scroll 8px center rgba(0, 0, 0, 0);
   border-bottom: 3px double #FFFFFF;
@@ -1856,14 +1860,14 @@ tr.selected td {
   padding: 0 0 1px;
   text-decoration: none;
 }
-/* line 67, ../sass/_thl.scss */
+/* line 70, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser h4 a:hover {
   background: url('../images/list-arrow-white-lg.gif?1368117369') no-repeat scroll 8px center rgba(0, 0, 0, 0);
   border-bottom: 3px double #FFFFFF;
   border-top: 3px double #FFFFFF;
   color: #FFFFFF;
 }
-/* line 75, ../sass/_thl.scss */
+/* line 78, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser h5 {
   color: #333333;
   font-family: helvetica,arial,sans-serif;
@@ -1871,7 +1875,7 @@ tr.selected td {
   line-height: 120%;
   margin: 12px 0 0 15px;
 }
-/* line 83, ../sass/_thl.scss */
+/* line 86, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser .field-type-image {
   border: 1px solid #666666;
   background: none repeat scroll 0 0 #FFFFFF;
@@ -1880,11 +1884,11 @@ tr.selected td {
   margin: 12px 12px 2px 5px;
   padding: 4px;
 }
-/* line 91, ../sass/_thl.scss */
+/* line 94, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser .field-type-image img {
   border: 1px solid #CCCCCC;
 }
-/* line 96, ../sass/_thl.scss */
+/* line 99, ../sass/_thl.scss */
 .node-teaser-to-node.node-teaser p {
   font-size: 90%;
   line-height: 150%;
@@ -1894,7 +1898,7 @@ tr.selected td {
 
 /** End of Teasers*/
 /** Form Styles **/
-/* line 106, ../sass/_thl.scss */
+/* line 109, ../sass/_thl.scss */
 input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -1910,7 +1914,7 @@ input.form-autocomplete, input.form-text, input.form-file, textarea.form-textare
   padding: 2px;
 }
 
-/* line 121, ../sass/_thl.scss */
+/* line 124, ../sass/_thl.scss */
 input.form-submit, a.button {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
