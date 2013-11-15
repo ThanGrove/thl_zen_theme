@@ -1893,6 +1893,30 @@ tr.selected td {
 }
 
 /** End of Teasers*/
+/** Form Styles **/
+/* line 107, ../sass/_thl.scss */
+input.form-submit, a.button {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: url("images/buttons.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+  border-color: #E4E4E4 #D2D2D2 #B4B4B4;
+  border-image: none;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  color: #5A5A5A;
+  cursor: pointer;
+  font-family: "Lucida Grande",Verdana,sans-serif;
+  font-size: 1.077em;
+  font-weight: normal;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  padding: 4px 17px;
+  text-align: center;
+}
+
 /** THL Layout SCSS: Describes Layout of THL Pages and include Panopoly layout overrides **/
 /* line 3, ../sass/_thl_layout.scss */
 body {
@@ -2232,26 +2256,26 @@ body.page-admin #page #content {
 }
 /* line 6, ../sass/_thl_admin.scss */
 body.page-admin #page #content table {
-  width: 100%;
+  width: 98%;
 }
-/* line 8, ../sass/_thl_admin.scss */
+/* line 9, ../sass/_thl_admin.scss */
 body.page-admin #page #content table th {
   background-color: lightblue;
 }
-/* line 11, ../sass/_thl_admin.scss */
+/* line 12, ../sass/_thl_admin.scss */
 body.page-admin #page #content table th, body.page-admin #page #content table td {
   padding: 4px;
 }
-/* line 16, ../sass/_thl_admin.scss */
+/* line 17, ../sass/_thl_admin.scss */
 body.page-admin #page #content table.image-anchor {
   width: auto;
 }
-/* line 20, ../sass/_thl_admin.scss */
+/* line 21, ../sass/_thl_admin.scss */
 body.page-admin #page #content a {
   color: #0074BD;
   text-decoration: none;
 }
-/* line 25, ../sass/_thl_admin.scss */
+/* line 26, ../sass/_thl_admin.scss */
 body.page-admin #page #content a:hover {
   text-decoration: underline;
 }
