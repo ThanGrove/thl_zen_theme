@@ -26,9 +26,9 @@ body.page-admin {
       a:hover {
         text-decoration: underline;
       }
- 
+  
       li.is-active a.is-active {
-        color: white;
+        color: white !important;
       }
       
     } /** End of #content in body.page-admin **/

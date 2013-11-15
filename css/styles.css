@@ -2297,7 +2297,7 @@ body.page-admin #page #content a:hover {
 }
 /* line 30, ../sass/_thl_admin.scss */
 body.page-admin #page #content li.is-active a.is-active {
-  color: white;
+  color: white !important;
 }
 
 /** End of body.page-admin **/
