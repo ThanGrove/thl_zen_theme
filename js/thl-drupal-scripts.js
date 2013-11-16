@@ -19,7 +19,7 @@ Drupal.behaviors.my_custom_behavior = {
 		 // Open top menu on page
 	   setTimeout(function() {
 	   	$(".mccoppin-column3 .accordion-menu-wrapper:eq(0) h3").click();
-	   }, 1000);
+	   }, 500);
   }
 };
 
