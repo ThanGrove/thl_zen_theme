@@ -119,6 +119,82 @@ body {
               text-align: justify;
             }
         } /** End of Article */
+         
+        /** Teasers **/
+          
+        .node-teaser-to-node.node-teaser {
+          background: image-url("bg-thl-sprite.jpg") repeat-x scroll center top #EEEEEE;
+          border-bottom: 3px solid #C0C0C0;
+          float: left;
+          height: auto !important;
+          margin-bottom: 12px;
+          min-height: 150px;
+          overflow: hidden;
+          padding: 0 0 5px;
+          width: 100%;
+        
+          h4 {
+            background: image-url("bg-header-rabsal.png") no-repeat scroll 92% center #A17547;
+            color: #EEEFE6;
+            font-size: 110%;
+            line-height: 160%;
+            margin: 0;
+            padding: 0;
+            text-indent: 25px;
+            white-space: nowrap;
+            
+            a, a:visited {
+              background: image-url("list-diamond-white-off.gif") no-repeat scroll 8px center rgba(0, 0, 0, 0);
+              border-bottom: 3px double #FFFFFF;
+              border-top: 3px double #FFFFFF;
+              color: #EEEFE6;
+              display: block;
+              font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
+              font-size: 100%;
+              font-weight: bold;
+              line-height: 160%;
+              margin: 0;
+              padding: 0 0 1px;
+              text-decoration: none;
+            }
+            
+            a:hover {
+              background: image-url("list-arrow-white-lg.gif") no-repeat scroll 8px center rgba(0, 0, 0, 0);
+              border-bottom: 3px double #FFFFFF;
+              border-top: 3px double #FFFFFF;
+              color: #FFFFFF;
+            }
+          }
+          
+          h5 {
+            color: #333333;
+            font-family: helvetica,arial,sans-serif;
+            font-size: 100%;
+            line-height: 120%;
+            margin: 12px 0 0 15px;
+          }
+          
+          .field-type-image {
+            border: 1px solid #666666;
+            background: none repeat scroll 0 0 #FFFFFF;
+            display: inline;
+            float: right;
+            margin: 12px 12px 2px 5px;
+            padding: 4px;     
+            
+            img {
+              border: 1px solid #CCCCCC;
+              float: right;
+            }
+          }
+          
+          p {
+            font-size: 90%;
+            line-height: 150%;
+            margin: 8px 10px 12px 15px;
+            text-align: left;
+          }
+        } /** End of Teasers*/
       } /** End of Content */
     } /** End of Page **/
   } /** End of Page Wrapper **/

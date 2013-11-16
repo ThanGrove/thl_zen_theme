@@ -1821,84 +1821,8 @@ tr.selected td {
   position: relative;
 }
 
-/** Teasers **/
-/* line 34, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser {
-  background: url('../images/bg-thl-sprite.jpg?1368117368') repeat-x scroll center top #eeeeee;
-  border-bottom: 3px solid #C0C0C0;
-  float: left;
-  height: auto !important;
-  margin-bottom: 12px;
-  min-height: 150px;
-  overflow: hidden;
-  padding: 0 0 5px;
-  width: 100%;
-}
-/* line 45, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser h4 {
-  background: url('../images/bg-header-rabsal.png?1368117369') no-repeat scroll 92% center #a17547;
-  color: #EEEFE6;
-  font-size: 110%;
-  line-height: 160%;
-  margin: 0;
-  padding: 0;
-  text-indent: 25px;
-  white-space: nowrap;
-}
-/* line 55, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser h4 a, .node-teaser-to-node.node-teaser h4 a:visited {
-  background: url('../images/list-diamond-white-off.gif?1368117368') no-repeat scroll 8px center rgba(0, 0, 0, 0);
-  border-bottom: 3px double #FFFFFF;
-  border-top: 3px double #FFFFFF;
-  color: #EEEFE6;
-  display: block;
-  font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
-  font-size: 100%;
-  font-weight: bold;
-  line-height: 160%;
-  margin: 0;
-  padding: 0 0 1px;
-  text-decoration: none;
-}
-/* line 70, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser h4 a:hover {
-  background: url('../images/list-arrow-white-lg.gif?1368117369') no-repeat scroll 8px center rgba(0, 0, 0, 0);
-  border-bottom: 3px double #FFFFFF;
-  border-top: 3px double #FFFFFF;
-  color: #FFFFFF;
-}
-/* line 78, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser h5 {
-  color: #333333;
-  font-family: helvetica,arial,sans-serif;
-  font-size: 100%;
-  line-height: 120%;
-  margin: 12px 0 0 15px;
-}
-/* line 86, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser .field-type-image {
-  border: 1px solid #666666;
-  background: none repeat scroll 0 0 #FFFFFF;
-  display: inline;
-  float: right;
-  margin: 12px 12px 2px 5px;
-  padding: 4px;
-}
-/* line 94, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser .field-type-image img {
-  border: 1px solid #CCCCCC;
-}
-/* line 99, ../sass/_thl.scss */
-.node-teaser-to-node.node-teaser p {
-  font-size: 90%;
-  line-height: 150%;
-  margin: 8px 10px 12px 15px;
-  text-align: left;
-}
-
-/** End of Teasers*/
 /** Form Styles **/
-/* line 109, ../sass/_thl.scss */
+/* line 32, ../sass/_thl.scss */
 input.form-autocomplete, input.form-text, input.form-file, textarea.form-textarea, select.form-select {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -1914,7 +1838,7 @@ input.form-autocomplete, input.form-text, input.form-file, textarea.form-textare
   padding: 2px;
 }
 
-/* line 124, ../sass/_thl.scss */
+/* line 47, ../sass/_thl.scss */
 input.form-submit, a.button {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -2058,6 +1982,8 @@ body #page-wrapper #page #content {
   font-size: 1.32em;
   line-height: 1.5em;
   /** End of Article */
+  /** Teasers **/
+  /** End of Teasers*/
 }
 /* line 115, ../sass/_thl_layout.scss */
 body #page-wrapper #page #content article {
@@ -2067,29 +1993,103 @@ body #page-wrapper #page #content article {
 body #page-wrapper #page #content article p {
   text-align: justify;
 }
+/* line 125, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser {
+  background: url('../images/bg-thl-sprite.jpg?1368117368') repeat-x scroll center top #eeeeee;
+  border-bottom: 3px solid #C0C0C0;
+  float: left;
+  height: auto !important;
+  margin-bottom: 12px;
+  min-height: 150px;
+  overflow: hidden;
+  padding: 0 0 5px;
+  width: 100%;
+}
+/* line 136, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 {
+  background: url('../images/bg-header-rabsal.png?1368117369') no-repeat scroll 92% center #a17547;
+  color: #EEEFE6;
+  font-size: 110%;
+  line-height: 160%;
+  margin: 0;
+  padding: 0;
+  text-indent: 25px;
+  white-space: nowrap;
+}
+/* line 146, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a, body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a:visited {
+  background: url('../images/list-diamond-white-off.gif?1368117368') no-repeat scroll 8px center rgba(0, 0, 0, 0);
+  border-bottom: 3px double #FFFFFF;
+  border-top: 3px double #FFFFFF;
+  color: #EEEFE6;
+  display: block;
+  font-family: "Trebuchet MS","Lucida Grande",Helvetica,Arial,sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 160%;
+  margin: 0;
+  padding: 0 0 1px;
+  text-decoration: none;
+}
+/* line 161, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h4 a:hover {
+  background: url('../images/list-arrow-white-lg.gif?1368117369') no-repeat scroll 8px center rgba(0, 0, 0, 0);
+  border-bottom: 3px double #FFFFFF;
+  border-top: 3px double #FFFFFF;
+  color: #FFFFFF;
+}
+/* line 169, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser h5 {
+  color: #333333;
+  font-family: helvetica,arial,sans-serif;
+  font-size: 100%;
+  line-height: 120%;
+  margin: 12px 0 0 15px;
+}
+/* line 177, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser .field-type-image {
+  border: 1px solid #666666;
+  background: none repeat scroll 0 0 #FFFFFF;
+  display: inline;
+  float: right;
+  margin: 12px 12px 2px 5px;
+  padding: 4px;
+}
+/* line 185, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser .field-type-image img {
+  border: 1px solid #CCCCCC;
+  float: right;
+}
+/* line 191, ../sass/_thl_layout.scss */
+body #page-wrapper #page #content .node-teaser-to-node.node-teaser p {
+  font-size: 90%;
+  line-height: 150%;
+  margin: 8px 10px 12px 15px;
+  text-align: left;
+}
 
 /** End of Body element */
 /* Adjustments to Panopoly layouts */
 /** Mccoppin Layout */
-/* line 131, ../sass/_thl_layout.scss */
+/* line 207, ../sass/_thl_layout.scss */
 .mccoppin-column1 {
   width: 50% !important;
   padding-top: 10px;
 }
 
-/* line 136, ../sass/_thl_layout.scss */
+/* line 212, ../sass/_thl_layout.scss */
 .mccoppin-column2 {
   width: 26.5% !important;
   padding-top: 10px;
 }
 
-/* line 141, ../sass/_thl_layout.scss */
+/* line 217, ../sass/_thl_layout.scss */
 .mccoppin-column3 {
   width: 21.5% !important;
   margin-left: 20px;
 }
 
-/* line 146, ../sass/_thl_layout.scss */
+/* line 222, ../sass/_thl_layout.scss */
 .mccoppin-column-content-region-inner {
   margin-right: 0px !important;
 }
